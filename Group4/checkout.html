@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilled Food House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>GRILLED FOOD HOUSE</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Signup</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="checkout">
+            <h2>Check Out</h2>
+            <div class="container">
+                <div class="billing-info">
+                    <h3>Delivery Details</h3>
+                    <form>
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name">
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone number">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" placeholder="Enter your delivery address"></textarea>
+                    </form>
+                </div>
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <table class="order-details-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Grilled Beef Steak with Mashed Potato</td>
+                                <td>1</td>
+                                <td>Php 399.00</td>
+                            </tr>
+                            <tr>
+                                <td>Orange Juice</td>
+                                <td>1</td>
+                                <td>Php 69.00</td>
+                            </tr>
+                            <tr>
+                                <td>Spring Rolls with Spicy Peanut Sauce</td>
+                                <td>1</td>
+                                <td>Php 350.00</td>
+                            </tr>
+                            <tr>
+                                <td>Grilled Barbeque with Rice</td>
+                                <td>1</td>
+                                <td>Php 120.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Subtotal</th>
+                                <td></td>
+                                <td>Php 938.00</td>
+                            </tr>
+                            <tr>
+                                <th>Delivery</th>
+                                <td></td>
+                                <td>Php 68.00</td>
+                            </tr>
+                            <tr>
+                                <th>VAT</th>
+                                <td></td>
+                                <td>Php 50.00</td>
+                            </tr>
+                            <tr>
+                                <th>TOTAL</th>
+                                <td></td>
+                                <td>Php 1,056.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="payment-methods">
+                        <p>Select a payment method:</p>
+                        <label for="payment-method-gcash">
+                            <input type="radio" id="payment-method-gcash" name="payment-method" value="gcash">
+                            Gcash
+                        </label>
+                        <label for="payment-method-credit-card">
+                            <input type="radio" id="payment-method-credit-card" name="payment-method" value="credit-card">
+                            Credit/Debit Card
+                        </label>
+                        <label for="payment-method-cod">
+                            <input type="radio" id="payment-method-cod" name="payment-method" value="cod">
+                            Cash on Delivery
+                        </label>
+                    </div>
+                    <button class="btn">Confirm Order</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
